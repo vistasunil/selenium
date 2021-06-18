@@ -3,7 +3,8 @@ node {
 		git "https://github.com/vistasunil/selenium.git"
 		}
 	stage ('Build'){
-		bat "copy * SeleniumTest"
+		bat "xcopy src SeleniumTest"
+		bat "copy pom.xml SeleniumTest"
 		dir("SeleniumTest") {
 		   bat "mvn clean install"
 	       }
