@@ -3,7 +3,7 @@ node {
 		git "https://github.com/vistasunil/selenium.git"
 		}
 	stage ('Build'){
-		bat "cp -R * SeleniumTest"
+		bat "xcopy /e /k /h /i . SeleniumTest"
 		dir("SeleniumTest") {
 		   bat "mvn clean install"
 	       }
