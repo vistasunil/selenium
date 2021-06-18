@@ -1,6 +1,6 @@
 node {
 	stage ('SCM checkout'){
-		git "https://github.com/vistasunil/selenium"
+		C:\Users\sunil.s.kumar\AppData\Local\GitHubDesktop\app-2.6.6\resources\app\git\cmd\git "https://github.com/vistasunil/selenium"
 		}
 	stage ('Build'){
     	dir("SeleniumTest") {
