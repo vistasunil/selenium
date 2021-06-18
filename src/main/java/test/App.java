@@ -14,7 +14,7 @@ public class App {
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://www.ibm.com");
 		driver.manage().window().maximize();		
-		driver.findElement(By.id("q")).sendKeys("Introduction to DevOps Capabilities");
+		driver.findElement(By.id("q")).sendKeys("DevOps");
 		driver.findElement(By.className("ibm-search-link")).click();
 		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);		
 		
