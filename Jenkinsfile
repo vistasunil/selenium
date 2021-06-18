@@ -4,10 +4,10 @@ node {
 		}
 	stage ('Build'){
     	dir("SeleniumTest") {
-	   sh "mvn clean install"
+	   bat "mvn clean install"
        }
        	dir("SeleniumTest/target") {
-	   sh "java -jar SeleniumTest-0.0.1-SNAPSHOT.jar"
+	   bat "java -jar SeleniumTest-0.0.1-SNAPSHOT.jar"
        }
 		}
 }
