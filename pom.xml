@@ -71,7 +71,6 @@
             <configuration>
                 <target>10</target>
                 <source>10</source>
-                <release>10</release>
             </configuration>
 
         </plugin>
