@@ -19,28 +19,30 @@ public class App {
 		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);		
 		
 		String firstData = driver.findElement(By.className("ibm--result-item__title")).getText();
-		String CheckData = "Introduction to DevOps Capabilities";
+		String CheckData = "DevOps – IBM Developer – IBM Developer";
+		System.out.println(firstData);
 		if(firstData.equals(CheckData)) {
 			driver.findElement(By.className("ibm--result-item__title")).click();
 			driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		}
 		else {
-			System.out.println("Course not found");
+			System.out.println("Item not found");
 		}
-	    
-		driver.findElement(By.className("bx--btn--secondary")).click();
-		String actualData = driver.findElement(By.className("pl-header-subtitle")).getText();
-		String expectedData = "Course code: C120019G";
 		
+		String actualData = driver.findElement(By.className("developer--card__title")).getText();
+		String expectedData = "Use Tekton and OpenShift operators to automate application deployment";
+		System.out.println(actualData);
 		if(actualData.equals(expectedData)) {
-			System.out.println("Found Course!");			
-			String dateView = driver.findElement(By.className("course-card-icons")).getText();
-			System.out.println("Course Details: \n"+ dateView + "\n"); 
-			System.out.println("Test Successful");
+			System.out.println("Found String!\n---------------");			
+			String dateView = driver.findElement(By.className("ibmcode_upcomingevents")).getText();
+			String timeView = driver.findElement(By.className("developer--card__location")).getText();
+			System.out.println("Next Event is on: \n"+ dateView + "\n"+ timeView);
+			System.out.println("---------------\nTest Successful");
 			driver.close();	
 		}
 		else {
 			System.out.println("Oops!! String Not Found.");
-		}		
+		}
+	
 	}
 }
