@@ -104,7 +104,7 @@
         <manifest>
           <addClasspath>true</addClasspath>
           <classpathPrefix>lib/</classpathPrefix>
-          <mainClass>test.testngAnnotations</mainClass>
+          <mainClass>test.testing</mainClass>
         </manifest>
       </archive>
     </configuration>
