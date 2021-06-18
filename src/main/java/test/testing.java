@@ -13,8 +13,12 @@ public class testing{
        driver.get(baseUrl);
        actualTitle = driver.getTitle();
        if (actualTitle.contentEquals(expectedTitle)){
+           System.out.println("Website Title Expected: "+ expectedTitle);
+           System.out.println("Website Title Actual: "+ actualTitle);
            System.out.println("TEST PASSED!");
        } else {
+           System.out.println("Website Title Expected: "+ expectedTitle);
+           System.out.println("Website Title Actual: "+ actualTitle);
            System.out.println("TEST FAILED");
        }
        driver.close();
