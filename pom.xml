@@ -104,7 +104,7 @@
         <manifest>
           <addClasspath>true</addClasspath>
           <classpathPrefix>lib/</classpathPrefix>
-          <mainClass>test.headlessDemo</mainClass>
+          <mainClass>test.App</mainClass>
         </manifest>
       </archive>
     </configuration>
