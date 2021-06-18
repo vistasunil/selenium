@@ -4,7 +4,7 @@ node {
 		}
 	stage ('Build'){		
 		bat "xcopy /E /Y src SeleniumTest"
-		bat "copy pom.xml SeleniumTest"
+		bat "copy pom.xml SeleniumTest\src"
 		dir("SeleniumTest") {
 		   bat "mvn clean install"
 	       }
