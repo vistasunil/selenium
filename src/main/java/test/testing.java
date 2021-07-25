@@ -9,9 +9,9 @@ public class testing{
        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");	// <-- Change this path
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
-       options.addArguments("no-sandbox");    
-       options.addArguments("disable-dev-shm-usage");
-       options.addArguments("headless");        
+       options.addArguments("--no-sandbox");    
+       options.addArguments("--disable-dev-shm-usage");
+       options.addArguments("--headless");        
         //pass the options parameter in the Chrome driver declaration
        WebDriver driver = new ChromeDriver(options);        
        String baseUrl = "http://34.136.113.45:82/devopsIQ";
