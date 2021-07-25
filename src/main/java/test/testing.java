@@ -10,9 +10,9 @@ public class testing{
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
        //options.addArguments("--headless", "--disable-gpu", "--dump-dom");    
-      options.add_argument("--user-data-dir=/home/ubuntu") #Path to your chrome user-data/profile
-options.add_argument('--disable-infobars') #disable the automation prompt bar
-options.add_argument('--lang=en') #Set language to English
+      options.add_argument("--user-data-dir=/home/ubuntu"); #Path to your chrome user-data/profile
+options.add_argument('--disable-infobars'); #disable the automation prompt bar
+options.add_argument('--lang=en'); #Set language to English
        options.addArguments("--headless", "--dump-dom", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
        WebDriver driver = new ChromeDriver(options);        
        String baseUrl = "https://thecloudtrain.com/";
