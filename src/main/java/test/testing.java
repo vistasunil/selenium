@@ -11,7 +11,7 @@ public class testing{
         //add the headless argument
        //options.addArguments("--headless", "--disable-gpu", "--dump-dom");        
        options.addArguments("disable-infobars");
-       options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+       //options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
        options.setExperimentalOption("useAutomationExtension", false);
 
         options.addArguments("--disable-gpu");
