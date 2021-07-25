@@ -12,7 +12,7 @@ public class testing{
        //options.addArguments("--headless");        
        options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
        WebDriver driver = new ChromeDriver(options);        
-       String baseUrl = "http://34.136.113.45:82/devopsIQ";
+       String baseUrl = "https://www.thecloudtrain.com/";
        String expectedTitle = "Jenkins Webhook Website";
        String actualTitle = "";
        driver.get(baseUrl);
