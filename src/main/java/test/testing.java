@@ -10,17 +10,18 @@ public class testing{
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
        options.addArguments("--no-sandbox");    
-       options.addArguments("--no-sandbox");    
-       options.addArguments("--no-sandbox");    
-        options.addArguments("--no-sandbox");    
-       options.addArguments("--no-sandbox");    
-       options.addArguments("--no-sandbox");    
-       options.addArguments("--no-sandbox");    
-       options.addArguments("--no-sandbox");    
-      --start-maximized;--test-type;--no-sandbox;--ignore-certificate-errors;
-                   --disable-popup-blocking;--disable-default-apps;--disable-extensions-file-access-check;
-                   --incognito;--disable-infobars,--disable-gpu
-       options.addArguments("--disable-dev-shm-usage");
+       options.addArguments("--start-maximized");    
+       options.addArguments("--test-type");    
+        options.addArguments("--ignore-certificate-errors");    
+       options.addArguments("--disable-popup-blocking");    
+       options.addArguments("--disable-default-apps");    
+       options.addArguments("-disable-extensions-file-access-check");    
+       options.addArguments("--no-sandbox");   
+      options.addArguments("--disable-extensions-file-access-check");  
+      options.addArguments("--disable-infobars");  
+      options.addArguments("--disable-gpu");  
+       options.addArguments("--incognito"); 
+        options.addArguments("--disable-dev-shm-usage");
        options.addArguments("--headless");        
        options.setExperimentalOption("useAutomationExtension", false);
         //pass the options parameter in the Chrome driver declaration
