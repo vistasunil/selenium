@@ -9,9 +9,8 @@ public class testing{
        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");	// <-- Change this path
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
-       options.addArguments("--headless");        
-       options.setExperimentalOption("useAutomationExtension", false);
-        //pass the options parameter in the Chrome driver declaration
+       //options.addArguments("--headless");        
+       options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
        WebDriver driver = new ChromeDriver(options);        
        String baseUrl = "http://34.136.113.45:82/devopsIQ";
        String expectedTitle = "Jenkins Webhook Website";
