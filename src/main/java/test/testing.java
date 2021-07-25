@@ -9,19 +9,6 @@ public class testing{
        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");	// <-- Change this path
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
-       options.addArguments("--no-sandbox");    
-       options.addArguments("--start-maximized");    
-       options.addArguments("--test-type");    
-        options.addArguments("--ignore-certificate-errors");    
-       options.addArguments("--disable-popup-blocking");    
-       options.addArguments("--disable-default-apps");    
-       options.addArguments("-disable-extensions-file-access-check");    
-       options.addArguments("--no-sandbox");   
-      options.addArguments("--disable-extensions-file-access-check");  
-      options.addArguments("--disable-infobars");  
-      options.addArguments("--disable-gpu");  
-       options.addArguments("--incognito"); 
-        options.addArguments("--disable-dev-shm-usage");
        options.addArguments("--headless");        
        options.setExperimentalOption("useAutomationExtension", false);
         //pass the options parameter in the Chrome driver declaration
