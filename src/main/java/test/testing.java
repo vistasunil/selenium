@@ -10,6 +10,7 @@ public class testing{
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
        options.addArguments("no-sandbox");    
+       options.addArguments("disable-dev-shm-usage")
        options.addArguments("headless");        
         //pass the options parameter in the Chrome driver declaration
        WebDriver driver = new ChromeDriver(options);        
