@@ -5,7 +5,7 @@ node ('slave2') {
 	stage ('Build'){		
 		sh "mvn clean install"
 		dir("target") {
-			sh "/usr/bin/chromium-browser --headless --disable-gpu --dump-dom "
+			sh "/usr/bin/chromium-browser --headless --disable-gpu --dump-dom https://www.chromestatus.com/"
 		   sh "java -jar SeleniumTest-0.0.1-SNAPSHOT.jar"
 	       }	       
 	}
