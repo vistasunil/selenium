@@ -10,6 +10,16 @@ public class testing{
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
        options.addArguments("--no-sandbox");    
+       options.addArguments("--no-sandbox");    
+       options.addArguments("--no-sandbox");    
+        options.addArguments("--no-sandbox");    
+       options.addArguments("--no-sandbox");    
+       options.addArguments("--no-sandbox");    
+       options.addArguments("--no-sandbox");    
+       options.addArguments("--no-sandbox");    
+      --start-maximized;--test-type;--no-sandbox;--ignore-certificate-errors;
+                   --disable-popup-blocking;--disable-default-apps;--disable-extensions-file-access-check;
+                   --incognito;--disable-infobars,--disable-gpu
        options.addArguments("--disable-dev-shm-usage");
        options.addArguments("--headless");        
        options.setExperimentalOption("useAutomationExtension", false);
