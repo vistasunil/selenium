@@ -9,9 +9,9 @@ public class testing{
        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");	// <-- Change this path
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
-       //options.addArguments("headless");        
+       options.addArguments("headless");        
     
-       options.addArguments("--headless", "window-size=1024,768", "--no-sandbox"); //("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
+       //options.addArguments("--headless", "window-size=1024,768", "--no-sandbox"); //("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
        WebDriver driver = new ChromeDriver(options);        
        String baseUrl = "https://www.thecloudtrain.com/";
        String expectedTitle = "Jenkins Webhook Website";
