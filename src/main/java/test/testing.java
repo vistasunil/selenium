@@ -9,6 +9,7 @@ public class testing{
        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");	// <-- Change this path
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
+       options.addArguments("no-sandbox");    
        options.addArguments("headless");        
         //pass the options parameter in the Chrome driver declaration
        WebDriver driver = new ChromeDriver(options);        
