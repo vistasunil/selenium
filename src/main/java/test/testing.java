@@ -12,6 +12,7 @@ public class testing{
        options.addArguments("--no-sandbox");    
        options.addArguments("--disable-dev-shm-usage");
        options.addArguments("--headless");        
+       options.setExperimentalOption("useAutomationExtension", false);
         //pass the options parameter in the Chrome driver declaration
        WebDriver driver = new ChromeDriver(options);        
        String baseUrl = "http://34.136.113.45:82/devopsIQ";
