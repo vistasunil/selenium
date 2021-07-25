@@ -10,9 +10,6 @@ public class testing{
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
        //options.addArguments("--headless", "--disable-gpu", "--dump-dom");    
-      options.addArguments("--user-data-dir=/home/ubuntu"); 
-options.addArguments("--disable-infobars"); 
-options.addArguments("--lang=en"); 
        options.addArguments("--headless", "--dump-dom", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
        WebDriver driver = new ChromeDriver(options);        
        String baseUrl = "https://thecloudtrain.com/";
