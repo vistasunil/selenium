@@ -12,8 +12,8 @@ public class testing{
        options.addArguments("headless");        
         //pass the options parameter in the Chrome driver declaration
        WebDriver driver = new ChromeDriver(options);        
-       String baseUrl = "https://www.thecloudtrain.com";
-       String expectedTitle = "DevOps Workshop | Cloudtrain";
+       String baseUrl = "http://34.136.113.45:82/devopsIQ";
+       String expectedTitle = "Jenkins Webhook Website";
        String actualTitle = "";
        driver.get(baseUrl);
        actualTitle = driver.getTitle();
