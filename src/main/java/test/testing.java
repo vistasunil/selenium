@@ -11,7 +11,10 @@ public class testing{
         //add the headless argument
        options.setBinary("/opt/google/chrome/chrome");
        options.addArguments("window-size=1400,800");  
-       options.addArguments("headless");    
+       options.addArguments("headless");  
+      options.addArguments("start-maximized");
+options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+options.setExperimentalOption("useAutomationExtension", false);
        //options.addArguments("--headless", "--dump-dom", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
        WebDriver driver = new ChromeDriver(options);        
        String baseUrl = "https://thecloudtrain.com/";
