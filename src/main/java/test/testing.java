@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class testing{
    public static void main(String[] args) {
        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+      String chromeBinary = environmentVariables.getProperty(ThucydidesSystemProperty.WEBDRIVER_CHROME_BINARY);
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
        options.setBinary("/opt/google/chrome/chrome");   
