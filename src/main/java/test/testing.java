@@ -7,10 +7,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class testing{
    public static void main(String[] args) {
        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-      String chromeBinary = environmentVariables.getProperty(ThucydidesSystemProperty.WEBDRIVER_CHROME_BINARY);
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
-       options.setBinary("/opt/google/chrome/chrome");   
+       options.setBinary(new File("/opt/google/chrome/chrome"));   
        options.addArguments("window-size=1400,800");  
        options.addArguments("headless");  
        //options.addArguments("--headless", "--dump-dom", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
