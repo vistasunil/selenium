@@ -9,7 +9,7 @@ public class testing{
        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
-       options.setBinary(new File("/opt/google/chrome/chrome"));   
+       options.setBinary("/opt/google/chrome/chrome");   
        options.addArguments("window-size=1400,800");  
        options.addArguments("headless");  
        //options.addArguments("--headless", "--dump-dom", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
