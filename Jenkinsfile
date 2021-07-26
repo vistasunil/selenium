@@ -10,7 +10,8 @@ node ('slave2') {
 	stage ('Build'){
 		sh "mvn clean install"
 		dir("target") {
-		   sh "java -jar SeleniumTest-0.0.1-SNAPSHOT.jar"
+		sh "export PATH=$PATH:/opt/google/chrome/"
+		sh "java -jar SeleniumTest-0.0.1-SNAPSHOT.jar"
 	       }	       
 	}
 }
