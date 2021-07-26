@@ -3,7 +3,7 @@ node ('slave2') {
 		git "https://github.com/vistasunil/selenium.git"
 		}
 	stage ('Test using python code'){
-		sh "sudo apt install python3-pip"
+		sh "sudo apt install python3-pip -y"
 		sh "pip3 install selenium"
 		sh "python3 sel.py"
 	}		
