@@ -1,4 +1,4 @@
-node ('slave1') {
+node ('slave2') {
 	stage ('SCM checkout'){
 		git "https://github.com/vistasunil/selenium.git"
 		}
