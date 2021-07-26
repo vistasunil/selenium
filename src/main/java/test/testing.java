@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class testing{
    public static void main(String[] args) {
-       System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");	// <-- Change this path
+       
        ChromeOptions options = new ChromeOptions();        
         //add the headless argument
        options.setBinary("/opt/google/chrome/chrome");
@@ -15,7 +15,8 @@ public class testing{
       options.addArguments("start-maximized");
 options.setExperimentalOption("useAutomationExtension", false);
        //options.addArguments("--headless", "--dump-dom", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
-       WebDriver driver = new ChromeDriver(options);        
+       System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");	// <-- Change this path
+      WebDriver driver = new ChromeDriver(options);        
        String baseUrl = "https://thecloudtrain.com/";
        String expectedTitle = "Jenkins Webhook Website";
        String actualTitle = "";
