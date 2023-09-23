@@ -10,7 +10,7 @@ chrome_options.add_argument("--headless")
 service = Service(executable_path="/usr/local/bin/chromedriver")
 driver = webdriver.Chrome(service=service, options=chrome_options)  
 driver.get("https://thecloudtrain.com");
-expectedTitle = "DevOps Workshop | Cloudtrain";
+expectedTitle = "Home | Cloudtrain";
 actualTitle = driver.title;
 print(actualTitle);
 
